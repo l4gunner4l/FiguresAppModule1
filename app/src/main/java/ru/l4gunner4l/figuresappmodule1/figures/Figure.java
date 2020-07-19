@@ -2,7 +2,7 @@ package ru.l4gunner4l.figuresappmodule1.figures;
 
 import android.graphics.Canvas;
 
-abstract class Figure {
+public abstract class Figure {
 
     private Point basePoint;
 
@@ -10,7 +10,7 @@ abstract class Figure {
         this.basePoint = basePoint;
     }
 
-    abstract void draw(Canvas canvas);
+    public abstract void draw(Canvas canvas);
 
     public void moveTo(int dx, int dy){
         basePoint.setX(basePoint.getX() + dx);
